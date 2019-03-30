@@ -1,0 +1,23 @@
+
+  <h4>ตะกร้าสินค้า</h4>
+  <table class="table">
+      <thead>
+        <tr>
+          <th>รหัสสินค้า</th>
+          <th>ชื่อสินค้า</th>
+          <th>ราคาสินค้า</th>
+          <th>จำนวนที่ต้องการ</th>
+          <th>ราคาที่ต้องชำระ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of cartList">
+          <th >{{c.pId}}</th>
+          <td>{{c.pName}}</td>
+          <td>{{c.pCost}}</td>
+          <td>{{c.qty}}</td>
+          <td>{{c.qty*c.pCost}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
